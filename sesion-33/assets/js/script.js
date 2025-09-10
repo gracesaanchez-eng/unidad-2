@@ -85,7 +85,7 @@ document.getElementById("main-button").addEventListener ("click", function () {
     let greetParagraph = document.querySelector("#greet");
     /*greetParagraph.innerText = `Buenas noches ${magicNumber}`;*/
 
-    if (magicNumber == || magicNumber.length === 0) {
+    if (magicNumber == "" || magicNumber.length === 0) {
         greetParagraph.innerText = `NO INGRESASTE UN NOMBRE`
     } else {
         greetParagraph.innerText = `Buenas noches ${magicNumber}`;
@@ -95,10 +95,10 @@ document.getElementById("main-button").addEventListener ("click", function () {
 //Evento de click en otro botón
 //Seleccionamos el botón
 let togglerButton = document.querySelector("#toggler");
-//Fijamos el contenido
-let hiddenText.innerText = "MOSTRAR"
 //Seleccionamos el texto
 let hiddenText = document.querySelector("#hidden-text");
+//Fijamos el contenido
+hiddenText.innerText = "MOSTRAR"
 //Lo acultamos directamente
 hiddenText.style.display = "none";
 
@@ -118,4 +118,4 @@ togglerButton.addEventListener("click", function () {
 })
 
 //FORMA CORRECTA DE CAMBIAR ESTILOS
-let togglerButton2 = document.querySelector("#toggler-button-2");
+// (Este bloque es duplicado y puede eliminarse porque ya está arriba)
